@@ -1,25 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>adatbazis2</title>
+    <style>#piros {color:red} tr {color:green}</style>
+    <title>rendelő lap táblázat</title>
 </head>
+
 <body>
-    <h1>Gyűrű lista</h1>
+    <h1>Rendelő lap nyomtatási kép</h1>
+    
     <a href="adatbazis.html">Megrendelő lap</a>
-    <tr><a href="HTMLikonok/page_01.htm">Kollekció tábla 1</a>
-        <a href="HTMLikonok/page_02.htm">Kollekció tábla 2</a>
-        <a href="HTMLikonok/page_03.htm">Kollekció tábla 3</a>
-    </tr>
+    <a href="HTMLikonok/page_01.htm">Kollekció tábla 1</a>
+    <a href="HTMLikonok/page_02.htm">Kollekció tábla 2</a>
+    <a href="HTMLikonok/page_03.htm">Kollekció tábla 3</a>
+    <table>
+        <tr>
+            <td>cella</td>
+            <td>cella</td>
+            <td id="piros">cella</td>
+        </tr>
+        <tr>
+            <td>cella</td>
+            <td>cella</td>
+            <td>cella</td>
+        </tr>
+        <tr>
+            <td>cella</td>
+            <td>cella</td>
+            <td>cella</td>
+        </tr>
+        <tr>
+            <td>cella</td>
+            <td>cella</td>
+            <td>cella</td>
+        </tr>
+        <tr>
+            <td>cella</td>
+            <td colspan="2">cellakinyujtoz</td>  <!--oszlop kinyújtózik-->> 
+            
+        </tr>
+    </table>
+
 
     <ul>
-        <li id="mintaszám">szám</li> <img src="https://www.shutterstock.com/image-illustration/blank-gold-ring-diamond-mockup-600w-2052170027.jpg" alt="nics kép">
-        <li id="mintaszám">szám</li> <img src="https://www.shutterstock.com/image-illustration/blank-gold-ring-diamond-mockup-600w-2052170027.jpg" alt="nics kép">
-        
-    
+        <li id="mintaszám">szám <img
+                src="https://www.shutterstock.com/image-illustration/blank-gold-ring-diamond-mockup-600w-2052170027.jpg"
+                alt="nics kép"></li>
+        <li id="mintaszám2">szám2 <img
+                src="https://www.shutterstock.com/image-illustration/blank-gold-ring-diamond-mockup-600w-2052170027.jpg"
+                alt="nics kép"></li>
+
+
 
     </ul>
 </body>
+
 </html>
