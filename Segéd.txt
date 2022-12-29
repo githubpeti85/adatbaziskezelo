@@ -2,3 +2,5 @@
 content - padding - border - margin , border beállítása soliddal. Marginnak nincs színe.
 
 css szelektorok .osztály #id [attributum:"érték"]  attrib^:részlet egyezés elöl , attrib*:részlet egyezés bárhol, attrib$:részlet egyezés a végén.
+
+<!-- --> html komment

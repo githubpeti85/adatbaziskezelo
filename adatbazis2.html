@@ -4,58 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>#piros {color:red} tr {color: green;}</style>
-    <title>rendelő lap táblázat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="adatbazis.css">
+    <title>Futó rendelések</title>
 </head>
 
 <body>
-    <h1>Rendelő lap nyomtatási kép</h1>
+    <div id="navbar">
+        <a href="adatbazis.html" class="btn btn-primary">Megrendelő lap</a>
+        <a href="adatbazis2.html" class="btn btn-primary active">Gyártási állapot lista</a>
+        <a href="HTMLikonok/page_01.htm" class="btn btn-primary">Kollekció tábla 1</a>
+        <a href="HTMLikonok/page_02.htm" class="btn btn-primary ">Kollekció tábla 2</a>
+        <a href="HTMLikonok/page_03.htm" class="btn btn-primary ">Kollekció tábla 3</a>
+    </div>
+
+    <h1>Gyártási állapot lista</h1>
+    <br>
+    <br>
+    <div >
+        <table class="table table-bordered table-hover col-lg ">
+            <thead style=" border-width: 5px">
+                <tr>
+                    <th >fdfffffffffff</th>
+                    <th >fdfffffffffffffffffffffffffffffffffffffffff</th>
+                    <th >fdfffffffffffffffffffffffffffffffffffffffff</th>
+                    <th >fdfffffffffffffffffffffffffffffffffffffffff</th>
+                    <th >fdfffffffffffffffffffffffffffffffffffffffff</th>
+                    <th >fdfffffffffffffffffffffffffffffffffffffffff</th>
+                    <th >adfsdffffffffffffffffffffds</th>
+                    <th >celfdla</th>
+                    <th >cella</th>
+                    <th>cella</th>
+                    <th id="piros">piros</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>cella</td>
+                    <td>fgg</td>
+                    <td>cella</td>
+                </tr>
+                <tr>
+                    <td>cella</td>
+                    <td>cella</td>
+                    <td>cella</td>
+                </tr>
+                <tr>
+                    <td>cella</td>
+                    <td>cellf</td>
+                    <td>cella</td>
+                </tr>
+                <tr>
+                    <td>cella</td>
+                    <td colspan="2">cellakinyujtoz</td> <!--oszlop kinyújtózik-->
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
     
-    <a href="adatbazis.html">Megrendelő lap</a>
-    <a href="HTMLikonok/page_01.htm">Kollekció tábla 1</a>
-    <a href="HTMLikonok/page_02.htm">Kollekció tábla 2</a>
-    <a href="HTMLikonok/page_03.htm">Kollekció tábla 3</a>
-    <table>
-        <tr>
-            <td>cella</td>
-            <td>cella</td>
-            <td id="piros">cella</td>
-        </tr>
-        <tr>
-            <td>cella</td>
-            <td>cella</td>
-            <td>cella</td>
-        </tr>
-        <tr>
-            <td>cella</td>
-            <td>cella</td>
-            <td>cella</td>
-        </tr>
-        <tr>
-            <td>cella</td>
-            <td>cella</td>
-            <td>cella</td>
-        </tr>
-        <tr>
-            <td>cella</td>
-            <td colspan="2">cellakinyujtoz</td>  <!--oszlop kinyújtózik-->> 
-            
-        </tr>
-    </table>
 
 
-    <ul>
-        <li id="mintaszám">szám <img
-                src="https://www.shutterstock.com/image-illustration/blank-gold-ring-diamond-mockup-600w-2052170027.jpg"
-                alt="nics kép"></li>
-        <li id="mintaszám2">szám2 <img
-                src="https://www.shutterstock.com/image-illustration/blank-gold-ring-diamond-mockup-600w-2052170027.jpg"
-                alt="nics kép"></li>
+    <button type="button" onclick="document.getElementById('demo').innerHTML =('elmentve'+ Date())">
+        <p id="demo"> Elmentés</p>
 
 
-
-    </ul>
 </body>
 
 </html>
