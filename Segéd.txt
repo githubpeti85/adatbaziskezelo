@@ -4,3 +4,15 @@ content - padding - border - margin , border beállítása soliddal. Marginnak n
 css szelektorok .osztály #id [attributum:"érték"]  attrib^:részlet egyezés elöl , attrib*:részlet egyezés bárhol, attrib$:részlet egyezés a végén.
 
 <!-- --> html komment
+
+const dateControl = document.querySelector('input[type="date"]');   QERY SZELEKTOR SZINTAKTIKÁJA
+
+DÁTUM MEGADÁSA
+<form action="https://example.com">
+  <label>
+    Enter your birthday:
+    <input type="date" name="bday" />
+  </label>
+
+  <p><button>Submit</button></p>
+</form>

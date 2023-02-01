@@ -5,45 +5,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist\css\bootstrap.min.css">
     <link rel="stylesheet" href="adatbazis.css">
     <title>Megrednelőlap</title>
 </head>
 
 <body>
-    <h1>Megrendelői lap</h1>
-    <p>Ki kell tölteni a megrendelő lapot</p>
-    <div class="fejlec">
-        <table>
-            <thead>
-                <tr>
-                    <th id="id1"><a href="adatbazis2.html">Rendelő lap nyomtatási kép</a></th>
-                    <th id="id2"><a href="HTMLikonok/page_01.htm">Kollekció tábla 1</a>
-                    <th id="id3"> <a href="HTMLikonok/page_02.htm">Kollekció tábla 2</a></th>
-                    <th id="id4"> <a href="HTMLikonok/page_03.htm">Kollekció tábla 3</a></th>
-                </tr>
-            </thead>
-        </table>
+    <div id="navbar" class="btn-group">
+        <a href="adatbazis.html" class="btn btn-primary active">Megrendelő lap</a>
+        <a href="adatbazis2.html" class="btn btn-primary ">Gyártási állapot lista</a>
+        <a href="HTMLikonok/page_01.htm" class="btn btn-primary">Kollekció tábla 1</a>
+        <a href="HTMLikonok/page_02.htm" class="btn btn-primary ">Kollekció tábla 2</a>
+        <a href="HTMLikonok/page_03.htm" class="btn btn-primary ">Kollekció tábla 3</a>
     </div>
+    <h1>Megrendelő lap</h1>
     <br>
-    <div class="adatlaptable">
-        <table>
-            <tr>
-                <td>adat1<input id="adat1" type="text"></td>
-                <td id="adat2style">adat2 <input id="adat2" type="text"></td>
-                <td>adat1 <input id="adat1" type="text"></td>
-            </tr>
-            <tr>
-                <td>adat1<input id="adat1" type="text"></td>
-                <td>adat2 <input id="adat2" type="text"></td>
-                <td>adat1 <input id="adat1" type="text"></td>
-            </tr>
-        </table>
-    </div>
-    <form >
-        <label for="szinvalaszt">Válassza ki a színt:</label>
-        <input  type="color" name="szinvalaszt" id="szinvalaszt">
-        <input type="submit">
-      </form>
+    <form action="" method="get" class="form-example" >
+        <div class="form-example">
+            <label for="rendceg">Rendelő cég: </label>
+            <select class="form-example" type="list" name="rendceg" id="rendceg" required style="margin: 10px;">
+                <option value="rendceg1">Vevő 1</option>
+                <option value="rendceg2">Vevő 2</option>
+                <option value="rendceg3">Vevő 3</option>
+                <option value="rendceg4">Vevő 3</option>
+                <option value="rendceg5">Vevő 3</option>
+                <option value="rendceg6">Vevő 3</option>
+                <option value="rendceg7">Vevő 3</option>
+            </select>
+
+        </div>
+        <div class="form-example">
+            <label for="rendszam">Rendelőszám: </label>
+            <input type="text" name="rendszam" id="rendszam" required >
+        </div>
+        <div class="form-example">
+            <label for="mintaszam">Mintaszám: </label>
+            <input type="text" name="mintaszam" id="mintaszam" required>
+        </div>
+        <div class="form-example">
+            <label for="meret">Méret: </label>
+            <input type="text" name="meret" id="meret" required>
+        </div>
+        <div class="form-example">
+            <label for="alak">Alak kívül belül: </label>
+            <input type="text" name="alak" id="alak" required>
+        </div>
+        <div class="form-example">
+            <label for="szeles">Szélesség: </label>
+            <input type="text" name="szeles" id="szeles" required>
+        </div>
+        <div class="form-example">
+            <label for="darab">Darabszám: </label>
+            <input type="text" name="darab" id="darab" required>
+        </div>
+        <div class="form-example">
+            <label for="kovezes">Kövezés: </label>
+            <input type="text" name="kovezes" id="kovezes" required>
+        </div>
+        <div class="form-example">
+            <label for="kovekdb">Kövek száma: </label>
+            <input type="text" name="kovekdb" id="kovekdb" required>
+        </div>
+        <div class="form-example">
+            <label for="megjegyz1">Megjegyzés kézi: </label>
+            <input type="text" name="megjegyz1" id="megjegyz1" required>
+        </div>
+
+        <label  for="megjegyztip">Megjegyzés tip: </label>
+        <select multiple size="3" class="form-example" type="text" name="megjegyztip" id="megjegyztip" required style="margin: 10px;">
+            <option value="megjegyztip1">megjezések 1</option>
+            <option value="megjegyztip2">megjezések 2</option>
+            <option value="megjegyztip3">megjezések 3</option>
+            <option value="megjegyztip4">megjezések 3</option>
+            <option value="megjegyztip5">megjezések 3</option>
+            <option value="megjegyztip6">megjezések 3</option>
+            <option value="megjegyztip7">megjezések 3</option>
+        </select>
+
+        <div class="form-example">
+            <input type="submit" value="Mentés">
+        </div>
+    </form>
+
+
+
+
+
+    <label for="szinvalaszt">Rendelők beállítása</label>
+    <input type="color" name="szinvalaszt" id="szinvalaszt">
+    <input type="submit">
+    </form>
 </body>
 
 </html>
